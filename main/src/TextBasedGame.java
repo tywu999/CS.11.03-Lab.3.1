@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class TextBasedGames {
+public class TextBasedGame{
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -100,7 +100,7 @@ public class TextBasedGames {
                 int f = scanner6.nextInt();
                 if(f==1 || f==2){
                     Scanner scanner8 = new Scanner(System.in);
-                    System.out.println("Your Xbos locked on, You are currently in a good position, type 1 to place your MegaKnight, type 2 to place your Evolution Knight");
+                    System.out.println("Your Xbow locked on, You are currently in a good position, type 1 to place your MegaKnight, type 2 to place your Evolution Knight");
                     int h = scanner8.nextInt();
                     if(h==1){
                         Scanner scanner9 = new Scanner(System.in);
