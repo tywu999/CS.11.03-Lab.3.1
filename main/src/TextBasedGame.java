@@ -2,20 +2,33 @@ import java.util.Scanner;
 public class TextBasedGame{
 
     public static void main(String[] args) {
+        Scanner scanner1431 = new Scanner(System.in);
+        System.out.println("Please Enter Your Character Name: (NO SPACES PLEASE)");
+        String a = scanner1431.next();
+        boolean bc = aB(a, 7);
+        String cd = aC(a, 7);
+        String de = aD(a, 7);
+        String ef = aE(a, 7);
+        String fg = aF(a, 7);
+        double gh = aG(a, 7);
+        int ij = aJ(a, 7);
+        char jk = aK(a, 7);
+        String kl = aL(a, 7);
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please Enter Your Character Name: (NO SPACES PLEASE)");
         String name = scanner.next();
-        System.out.println("You are currently against chinese player 鸡鸡, choose what card you want to use.");
+        System.out.println("You are currently against chinese player abc, choose what card you want to use.");
         Scanner scanner1 = new Scanner(System.in);
-        System.out.println("鸡鸡 placed a pekka behind his king tower, type 1 to place Skeleton Army, type 2 to place Mega Knight");
-        int a = scanner1.nextInt();
-        if(a == 1){
+        System.out.println("abc placed a pekka behind his king tower, type 1 to place Skeleton Army, type 2 to place Mega Knight");
+        int abc = scanner1.nextInt();
+        if(abc == 1){
             Scanner scanner2 = new Scanner(System.in);
             System.out.println("Your Skarmy has countered his Pekka, type 1 to place a Hog Rider, type 2 to place down a Lava Hound");
             int b = scanner2.nextInt();
             if(b == 1){
                 Scanner scanner4 = new Scanner(System.in);
-                System.out.println("You have taken one of 鸡鸡's towers, type 1 to cycle Skeletons (Offensive), type 2 to place a Tesla (defensive)");
+                System.out.println("You have taken one of abc's towers, type 1 to cycle Skeletons (Offensive), type 2 to place a Tesla (defensive)");
                 int d = scanner4.nextInt();
                 if(d==1){
                     Scanner scanner13 = new Scanner(System.in);
@@ -90,35 +103,35 @@ public class TextBasedGame{
             }
 
         }
-        if(a==2){
+        if(abc==2) {
             Scanner scanner3 = new Scanner(System.in);
             System.out.println("Your MegaKnight has been defeated, you are currently down a tower... type 1 to place an Xbow, type 2 to place a Knight with Archers");
             int c = scanner3.nextInt();
-            if(c==1){
+            if (c == 1) {
                 Scanner scanner6 = new Scanner(System.in);
                 System.out.println("You Xbow is defended with an Ice Golem, type 1 to tornado the Ice Golem, type 2 to Fire Ball the Ice Golem");
                 int f = scanner6.nextInt();
-                if(f==1 || f==2){
+                if (f == 1 || f == 2) {
                     Scanner scanner8 = new Scanner(System.in);
                     System.out.println("Your Xbow locked on, You are currently in a good position, type 1 to place your MegaKnight, type 2 to place your Evolution Knight");
                     int h = scanner8.nextInt();
-                    if(h==1){
+                    if (h == 1) {
                         Scanner scanner9 = new Scanner(System.in);
                         System.out.println("Your MegaKnight leaves his King Tower at 154 hp, type 1 to FireBall it, type 2 to spam with HEHEHEHA emote");
                         int i = scanner9.nextInt();
                         System.out.println(name + " has defeated 鸡鸡!");
                     }
-                    if(h==2){
+                    if (h == 2) {
                         Scanner scanner10 = new Scanner(System.in);
                         System.out.println("Your Evo-Knight is tanking every attack, type 1 to place your MegaKnight, type 2 to place your archers");
                         int j = scanner10.nextInt();
-                        if(j==1){
+                        if (j == 1) {
                             Scanner scanner11 = new Scanner(System.in);
                             System.out.println("Your MegaKnight, along with your Evo-Knight has taken the opponent's King tower, type 1 to spam HEHEHEHA, type 2 to GG");
                             int k = scanner11.nextInt();
                             System.out.println(name + " has defeated 鸡鸡");
                         }
-                        if(j==2){
+                        if (j == 2) {
                             Scanner scanner12 = new Scanner(System.in);
                             System.out.println("Your Archers along with your Evo-Knight has left the King tower at 134 hp, type 1 to FireBall it, type 2 to spam with HEHEHEHA emote");
                             int l = scanner12.nextInt();
@@ -127,15 +140,15 @@ public class TextBasedGame{
                     }
                 }
             }
-            if (c==2) {
+            if (c == 2) {
                 Scanner scanner7 = new Scanner(System.in);
                 System.out.println("You're push is defended by an E-Giant, type 1 to Rocket the E-Giant, type 2 to give up and spam HEHEHEHA");
                 int g = scanner7.nextInt();
-                if(g==1){
+                if (g == 1) {
                     System.out.println("The E-Giant ends up leaving your King Tower at 145 hp, 鸡鸡 throws out a FireBall + spams Skeleton Crying emote...");
                     System.out.println(name + " has been defeated by 鸡鸡!");
                 }
-                if(g==2){
+                if (g == 2) {
                     System.out.println("鸡鸡 spams: 'well played!' You have been humilated...");
                     System.out.println(name + " has been defeated by 鸡鸡!");
                 }
@@ -143,6 +156,67 @@ public class TextBasedGame{
         }
         System.out.println("Thank You For Playing <3");
     }
+    public static boolean aB(String a, int n){
+        if(a.equals("abc")){
+            return true;
+        }
+        return false;
+    }
+    public static String aL(String a, int n){
+        if(a.equals("abc")){
+            return "NO";
+
+        }
+        return "OK :)";
+    }
+    public static char aK(String a, int n){
+        if(a.equals("abc")){
+            return 'a';
+        }
+        return 'a';
+    }
+    public static int aJ(String a, int n){
+        if(a.equals("abc")){
+            return 1;
+        }
+        return 2;
+    }
+    public static void aH(String a, int n){
+        if(a.equals("abc")){
+            n = 3;
+        }
+    }
+    public static double aG(String a, int n){
+        if(a.equals("abc")){
+            return 2.3;
+        }
+        return 2.4;
+    }
+    public static String aF(String a, int n){
+        if(a.equals("buzzz")){
+            return "YS";
+        }
+        return "OK :)";
+    }
+    public static String aE(String a, int n){
+        if(a.equals("aDc")){
+            return "No";
+        }
+        return "OK :)";
+    }
+    public static String aD(String a, int n){
+        if(a.equals("abc")){
+            return "AD";
+        }
+        return "OK :)";
+    }
+    public static String aC(String a, int n){
+        if(a.equals("abc")){
+            return "ASD";
+        }
+        return "OK :)";
+    }
 
 
 }
+
